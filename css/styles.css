@@ -408,6 +408,27 @@ footer .logo {
 
 .portfolio-list li:nth-child(3n)
 
+.section-one {
+	background-image: url(file: ///D:/JavaScriptCourse/goit-markup-hw-04/images/Img.svg);
+}
+
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	outline: 1px solid #C4C4C4;
+	background-image:linear-gradient(to right,
+	rgba(47, 48, 58, 0.4),
+	rgba(47, 48, 58, 0.4),
+	),
+    url(../images/Img10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
 /*основной цвет #212121 */
 /*вторичный цвет #757575 */
 /*белый #FFFFFF */
