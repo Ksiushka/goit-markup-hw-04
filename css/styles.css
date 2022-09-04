@@ -225,6 +225,7 @@ ul {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.2;
+	letter-spacing: 0.03em;
 	text-align: center;
 	margin-top: 0;
 }
@@ -418,9 +419,8 @@ footer .logo {
 	outline: 1px solid #C4C4C4;
 	background-image:linear-gradient(to right,
 	rgba(47, 48, 58, 0.4),
-	rgba(47, 48, 58, 0.4),
-	),
-    url(../images/Img10.jpg);
+	rgba(47, 48, 58, 0.4)),
+	url(../images/Img10.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -429,6 +429,105 @@ footer .logo {
 	
 }
 
+.features-list li::before {
+	display:block;
+	content:'' ;
+	height: 120px;
+	margin-bottom: 30px;
+	background: var(--section-team-background);
+	border-radius: 4px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-list li.antenna::before {
+	background-image: url(../images/antenna.svg);
+	background-size: 65.32px 70px;
+}
+
+.features-list li.clock::before {
+	background-image: url(../images/clock.svg);
+	background-size: 70px 70px;
+}
+
+.features-list li.diagram::before {
+	background-image: url(../images/diagram.svg);
+	background-size: 70px 53.69px;
+}
+
+.features-list li.astronaut::before {
+	background-image: url(../images/astronaut.svg);
+	background-size: 70px 70px;
+}
+
+
+.icon:hover .icon-blue {
+	fill: var(--accent-color);
+}
+
+.icon:hover .icon-wight {
+	fill: var(--hero-text-color);
+}
+
+.icon:not(:last-child) {
+	margin-right: 10px;
+}
+
+.icon-list {
+	text-align: center;
+	margin-top: 16px;
+
+}
+
+.icon-list:hover {
+
+}
+
+.icon {
+	width: 44px; 
+	height: 44px;
+	fill: var(--hero-text-color) ;
+} 
+
+.button-icon:hover {
+	fill: var(--accent-color);
+}
+
+.button-icon {
+	padding: 0;
+	border: none;
+	border-radius: 4px;
+	color: #AFB1B8;
+	background-color: var(--hero-text-color);
+}
+
+.clients {
+	display: flex;
+}
+
+.clients li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.button-clients {
+	background-color: #ffffff;
+	border: 1px solid #AFB1B8;
+	width: 170px;
+	height: 92px;
+	margin-top: 50px;
+	border-radius: 4px;
+	Flex-basis: calc ((100% - 150px) / 6);
+	flex-wrap: no-wrap;
+}
+
+.icon-clients:hover {
+	color: var(--accent-color);
+}
+
+.icon-client {
+	fill: #AFB1B8;
+}
 /*основной цвет #212121 */
 /*вторичный цвет #757575 */
 /*белый #FFFFFF */
