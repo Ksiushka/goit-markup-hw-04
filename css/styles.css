@@ -527,14 +527,7 @@ footer .logo {
 }
 
 .footer-contact-us {
-	margin-top: 20px;
-	color: var(--hero-text-color);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
+	
 }
 
 .footer-contact-us .button-icon {
@@ -547,6 +540,14 @@ footer .logo {
 
 .join {
 	margin-bottom: 20px;
+	margin-top: 20px;
+	color: var(--hero-text-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 
