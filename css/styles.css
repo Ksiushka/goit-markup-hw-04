@@ -4,9 +4,9 @@
 	--accent-color: #2196f3;
 	--hero-text-color: #ffffff;
 	--accent-background-color: #2F303A;
-	--button-hover-focus: #188CE8; 
-	--section-team-background: #F5F4FA; 
-	--logo-black: #000000; 
+	--button-hover-focus: #188CE8;
+	--section-team-background: #F5F4FA;
+	--logo-black: #000000;
 }
 
 body {
@@ -18,7 +18,8 @@ body {
 }
 
 header {
-	border-bottom: 1px solid #ECECEC;;
+	border-bottom: 1px solid #ECECEC;
+	;
 }
 
 h1,
@@ -68,7 +69,7 @@ img {
 	color: var(--accent-color);
 	text-decoration: none;
 	font-family: Raleway, sans-serif;
-	
+
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
@@ -103,13 +104,27 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-    display: block;
+	display: block;
 	text-decoration: none;
 }
 
 .mail-tel a:hover,
 .mail-tel a:focus {
 	color: var(--accent-color);
+}
+
+.mail-tel svg {
+	fill: var(--second-text-color);
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.mail-tel a:hover svg,
+.mail-tel a:focus svg {
+	fill: var(--accent-color);
 }
 
 .main-nav {
@@ -165,9 +180,9 @@ ul {
 	margin-bottom: 30px;
 }
 
-.section-title ;
-.features-list .title ;
-.team-list .title ; {
+.section-title,
+.features-list .title,
+.team-list .title {
 	color: var(--main-text-color);
 	text-decoration: none;
 	margin-top: 0;
@@ -397,7 +412,7 @@ footer .logo {
 }
 
 .site-nav a {
-    padding-top: 25px;
+	padding-top: 25px;
 	padding-bottom: 25px;
 	display: block;
 }
@@ -407,31 +422,29 @@ footer .logo {
 	align-items: center;
 }
 
-.portfolio-list li:nth-child(3n)
-
-.section-one {
-	background-image: url(file: ///D:/JavaScriptCourse/goit-markup-hw-04/images/Img.svg);
+.portfolio-list li:nth-child(3n) .section-one {
+	background-image: url(./images/Img.svg);
 }
 
 .overlay {
 	max-width: 1600px;
 	height: 600px;
 	outline: 1px solid #C4C4C4;
-	background-image:linear-gradient(to right,
-	rgba(47, 48, 58, 0.4),
-	rgba(47, 48, 58, 0.4)),
-	url(../images/Img10.jpg);
+	background-image: linear-gradient(to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)),
+		url(../images/Img10.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 }
 
 .features-list li::before {
-	display:block;
-	content:'' ;
+	display: block;
+	content: '';
 	height: 120px;
 	margin-bottom: 30px;
 	background: var(--section-team-background);
@@ -480,25 +493,31 @@ footer .logo {
 
 }
 
-.icon-list:hover {
-
-}
+.icon-list:hover {}
 
 .icon {
-	width: 44px; 
+	width: 44px;
 	height: 44px;
-	fill: var(--hero-text-color) ;
-} 
+	fill: #AFB1B8;
+}
 
-.button-icon:hover {
-	fill: var(--accent-color);
+.icon #circle {
+	stroke: red;
+}
+
+
+
+.button-icon:hover .icon {
+	fill: var(--hero-text-color);
 }
 
 .button-icon {
+	cursor: pointer;
 	padding: 0;
 	border: none;
-	border-radius: 4px;
-	color: #AFB1B8;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
 	background-color: var(--hero-text-color);
 }
 
@@ -511,23 +530,60 @@ footer .logo {
 }
 
 .button-clients {
-	background-color: #ffffff;
+	background-color: var(--hero-text-color);
 	border: 1px solid #AFB1B8;
 	width: 170px;
 	height: 92px;
 	margin-top: 50px;
 	border-radius: 4px;
-	Flex-basis: calc ((100% - 150px) / 6);
-	flex-wrap: no-wrap;
-}
-
-.icon-clients:hover {
-	color: var(--accent-color);
 }
 
 .icon-client {
 	fill: #AFB1B8;
 }
+
+.button-clients:hover {
+	border-color: var(--accent-color);
+	cursor: pointer;
+}
+
+.button-clients:hover .icon-client {
+	fill: var(--accent-color);
+}
+
+.footer-flex {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.footer-flex>div {
+	justify-content: flex-start;
+}
+
+.footer-address {
+	width: 300px;
+}
+
+.footer-contact-us {
+	margin-top: 30px;
+	color: var(--hero-text-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.footer-contact-us .button-icon {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.button-icon:hover {
+	background-color: var(--accent-color);
+}
+
+
 /*основной цвет #212121 */
 /*вторичный цвет #757575 */
 /*белый #FFFFFF */
