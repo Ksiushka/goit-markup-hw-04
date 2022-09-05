@@ -208,6 +208,12 @@ ul {
 .section-wedo li:not(:last-child) {
 	margin-right: 30px;
 }
+.portfolio-list li:hover {
+	background-image: linear-gradient(to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)),
+			url()
+}
 
 .portfolio-list {
 	display: flex;
@@ -441,6 +447,7 @@ footer .logo {
 
 }
 
+
 .features-img svg {
 	width: 270px;
 	height: 120px;
@@ -464,8 +471,6 @@ footer .logo {
 	margin-top: 16px;
 
 }
-
-.icon-list:hover {}
 
 .icon {
 	width: 44px;
