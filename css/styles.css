@@ -506,7 +506,7 @@ ul.icon-list {
 
 .clients {
 	display: flex;
-	text-align: center;
+		
 }
 
 .clients li:not(:last-child) {
@@ -514,11 +514,14 @@ ul.icon-list {
 }
 
 .button-clients {
-	background-color: var(--hero-text-color);
+	color: #AFB1B8;
 	border: 1px solid #AFB1B8;
 	width: 170px;
 	height: 92px;
 	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .customer {
@@ -526,11 +529,11 @@ ul.icon-list {
 }
 
 .icon-client {
-	fill: #AFB1B8;
-	margin-top: 25px;
+	fill: currentColor;
 }
 
-.button-clients:hover {
+.button-clients:hover,
+.button-clients:focus {
 	border-color: var(--accent-color);
 	cursor: pointer;
 }
@@ -541,16 +544,20 @@ ul.icon-list {
 
 .footer-flex {
 	display: flex;
-	flex-wrap: nowrap;
+	align-items: baseline;
 }
 
 .footer-address-logo {
-	width: 300px;
+	width: 231px;
 }
 
 .footer-contact-us .button-icon {
 	background-color: rgba(255, 255, 255, 0.1);
 	fill: var(--hero-text-color);
+}
+
+.footer-contact-us {
+	margin-left: 70px;
 }
 
 .footer-contact-us .button-icon:hover,
@@ -563,11 +570,8 @@ ul.icon-list {
 	margin-bottom: 20px;
 	margin-top: 20px;
 	color: var(--hero-text-color);
-	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
 	line-height: 1.14px;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
 
