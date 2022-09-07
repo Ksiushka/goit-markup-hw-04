@@ -106,6 +106,8 @@ ul {
 	letter-spacing: 0.02em;
 	display: flex;
 	text-decoration: none;
+	align-items: center;
+	padding: 32px 0;
 }
 
 .mail-tel a:hover,
@@ -459,24 +461,15 @@ footer .logo {
 }
 
 
-.features-img svg {
+.features-img {
 	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
 	background-color: var(--section-team-background);
 	border-radius: 4px;
-}
-
-.antena{
-	text-align: center;
-	vertical-align: middle;
-}
-.icon:hover .icon-blue {
-	fill: var(--accent-color);
-}
-
-.icon:hover .icon-wight {
-	fill: var(--hero-text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .icon-list li:not(:last-child) {
@@ -484,30 +477,31 @@ footer .logo {
 }
 
 ul.icon-list {
-	text-align: center;
 	display: flex;
-	margin-left: 32px;
+	align-items: center;
+	justify-content: center;
 	margin-top: 16px;
 }
 
 .icon {
-	width: 44px;
-	height: 44px;
-	fill: #AFB1B8;
-}
-
-.button-icon:hover {
-	fill: var(--hero-text-color);
+	width: 20px;
+	height: 20px;
 }
 
 .button-icon {
-	cursor: pointer;
-	padding: 0;
-	border: none;
 	height: 44px;
 	width: 44px;
 	border-radius: 50%;
-	background-color: var(--hero-text-color);
+	fill: #AFB1B8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-icon:hover,
+.button-icon:focus {
+	background-color: var(--accent-color);
+	fill: var(--hero-text-color);
 }
 
 .clients {
@@ -524,8 +518,11 @@ ul.icon-list {
 	border: 1px solid #AFB1B8;
 	width: 170px;
 	height: 92px;
-	margin-top: 50px;
 	border-radius: 4px;
+}
+
+.customer {
+	margin-bottom: 50px;
 }
 
 .icon-client {
@@ -556,12 +553,10 @@ ul.icon-list {
 	fill: var(--hero-text-color);
 }
 
-.footer-contact-us .icon-list {
-	margin-left: 0;
-}
-
-.button-icon:hover {
+.footer-contact-us .button-icon:hover,
+.footer-contact-us .button-icon:focus {
 	background-color: var(--accent-color);
+	fill: var(--hero-text-color);
 }
 
 .join {
