@@ -239,8 +239,8 @@ ul {
 	margin-bottom: 30px;
 }
 
-.portfolio-list li:hover, 
-.portfolio-list li:focus{
+.portfolio-list-1 :hover, 
+.portfolio-list-1 :focus{
 	border: 1px solid #EEEEEE;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -476,11 +476,23 @@ footer .logo {
 	margin-right: 10px;
 }
 
-ul.icon-list {
+ul .icon-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 16px;
+}
+
+.footer-contact-us .icon-list-1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	
+}
+
+.icon-list-1 li:not(:last-child) {
+	margin-right: 10px;
 }
 
 .icon {
@@ -535,11 +547,7 @@ ul.icon-list {
 .button-clients:hover,
 .button-clients:focus {
 	border-color: var(--accent-color);
-	cursor: pointer;
-}
-
-.button-clients:hover .icon-client {
-	fill: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .footer-flex {
@@ -547,13 +555,9 @@ ul.icon-list {
 	align-items: baseline;
 }
 
-.footer-address-logo {
-	width: 231px;
-}
-
 .footer-contact-us .button-icon {
 	background-color: rgba(255, 255, 255, 0.1);
-	fill: var(--hero-text-color);
+    fill: var(--hero-text-color);
 }
 
 .footer-contact-us {
@@ -567,10 +571,9 @@ ul.icon-list {
 }
 
 .join {
-	margin-bottom: 20px;
 	color: var(--hero-text-color);
 	font-weight: 700;
-	line-height: 1.14px;
+	line-height: 1.14;
 	text-transform: uppercase;
 }
 
